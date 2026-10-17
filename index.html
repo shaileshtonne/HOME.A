@@ -1720,5 +1720,18 @@
       }, 2500);
     }
   </script>
+  <!-- Supabase Client Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    // Supabase project credentials
+    const SUPABASE_URL = 'https://hmapdpikrhzmkwmardyt.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhtYXBkcGlrcmh6bWt3bWFyZHl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIyMTQwNzYsImV4cCI6MjEwNzc5MDA3Nn0.lZAkUhi4vaXi5sSIu4e2WJdqvp9quC8jpYge3RT4lDY';
+
+    // Initialize the client
+    const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  </script>
+</body>
+</html>
 </body>
 </html>
